@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1050389007039",
+    "firebase_url": "https://house-12c89.firebaseio.com",
+    "project_id": "house-12c89",
+    "storage_bucket": "house-12c89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050389007039:android:f3a5e0456189ed31",
+        "android_client_info": {
+          "package_name": "com.example.ilove.rental"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050389007039-3e6d4rhfnnnvs6m4fje3jdaspro21urs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ilove.rental",
+            "certificate_hash": "8ce72293705a20e96906336ec055bdadaacc5ea3"
+          }
+        },
+        {
+          "client_id": "1050389007039-ppicac5l5vr31cht3vv71o53p7f705is.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm_gQnLs_0g9UqSN-j2deN5aifR0kZGf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050389007039-ppicac5l5vr31cht3vv71o53p7f705is.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

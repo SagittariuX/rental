@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMain"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/treesbackground"
+            android:src="@drawable/cloud_layer"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/treesbackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lower_background"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/background_grass"
+            android:scaleType="fitXY"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Database : " />
+            <Spinner
+                android:id="@+id/databaseSelection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/modes"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/row1"
+            android:weightSum="2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_above="@id/row2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/edit"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_background"
+                app:srcCompat="@drawable/main_edit_button" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/view"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/round_background"
+                app:srcCompat="@drawable/main_search_button" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/row2"
+            android:weightSum="2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/calculate"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_background"
+                app:srcCompat="@drawable/calculator" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tenants"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@drawable/round_background"
+                app:srcCompat = "@drawable/tenants"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="15dp"
+    >
+    
+    
+    <Spinner
+        android:id="@+id/spinnerSearchDialogHouseNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/houseNumbers"
+        android:textAlignment="center"
+        />
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerSearchDialogHouseNumber"
+        android:weightSum="2"
+        >
+        <Spinner
+            android:id="@+id/spinnerSearchDialogMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/months"
+            android:layout_weight="1.25"
+            />
+        <Spinner
+            android:id="@+id/spinnerSearchDialogYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/years"
+            android:layout_weight="0.75"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSearchDialogReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linear1"
+        />
+
+    <Button
+        android:id="@+id/buttonSearchDialogSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_alignParentRight="true"
+        android:text="Search"
+        />
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorFAB">#23c906</color>
+    <color name="generic_green">#23e823</color>
+    <color name="opaque_generic_green">#bf23e823</color>
+    <color name="generic_red">#ed402d</color>
+    <color name="lightgreen">#64f564</color>
+    <color name="opaque_lightgreen">#bf64f564</color>
+    <color name="textbox_lightgreen">#4864f564</color>
+    <color name="black">#000000</color>
+
+
+
+
+</resources>

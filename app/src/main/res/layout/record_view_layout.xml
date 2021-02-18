@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myLinearLayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/roomNumberLargeCardView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textSize="40dp"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/houseNumberCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="326 Randolph Ave"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:layout_toRightOf="@+id/roomNumberLargeCardView"
+                    />
+
+                <TextView
+                    android:id="@+id/amountPaidCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paid: $325"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:layout_below="@+id/houseNumberCardView"
+                    android:layout_toRightOf="@id/roomNumberLargeCardView"
+                    />
+
+                <TextView
+                    android:id="@+id/roomNumberCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:textSize="18dp"
+                    android:text="Rm 1"/>
+                <TextView
+                    android:id="@+id/methodOfPaymentCardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/roomNumberCardView"
+                    android:layout_toRightOf="@id/amountPaidCardView"
+                    android:padding="5dp"
+                    android:textSize="18dp"
+                    android:text="Cash"/>
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
